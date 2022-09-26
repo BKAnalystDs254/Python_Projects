@@ -929,3 +929,25 @@ multiplication_table(5)
 
 multiplication_table(8)
 # Should print: 8x1=8 8x2=16 8x3=24
+
+
+def sum_divisors(n):
+  sum = 0
+# Return the sum of all divisors of n, not including n
+  i = 1
+  while i < n:
+    if n % i == 0:
+      sum += i
+      i +=1
+    else:
+      i+=1
+  # Return the sum of all divisors of n, not including n
+  return sum
+
+print(sum_divisors(0))
+
+print(sum_divisors(3))
+
+print(sum_divisors(36))
+
+print(sum_divisors(102))
