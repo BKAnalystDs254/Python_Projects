@@ -867,6 +867,29 @@ print(format_name("", ""))
 """
 x = 0
 while x < 5:
-  print("Not there yet, x=" + str(x))
-  x = x + 1
+    print("Not there yet, x=" + str(x))
+    x = x + 1
 print("x=" + str(x))
+
+x = 1
+sum = 0
+while x < 10:
+    sum += x  # sum = sum + x
+    x += 1  # x = x + 1
+print(sum)
+
+product = 1
+while x < 10:
+    product = product * x
+    x += 1
+print(product)
+
+
+def count_down(current):
+    while current > 0:
+        print(current)
+        current -= 1
+    print("Zero!")
+
+
+count_down(3)
